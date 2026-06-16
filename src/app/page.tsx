@@ -1,30 +1,9 @@
+import Nav from "@/components/Nav";
+
 export default function Home() {
   return (
     <main>
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-onyx/80 border-b border-white/[0.06]">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-3">
-            <svg className="w-6 h-6" viewBox="0 0 200 200" fill="none">
-              <path d="M 50 50 L 92 92 M 108 108 L 150 150" stroke="#4DE3FF" strokeWidth="7" strokeLinecap="round"/>
-              <path d="M 150 50 L 108 92 M 92 108 L 50 150" stroke="#4DE3FF" strokeWidth="7" strokeLinecap="round"/>
-            </svg>
-            <span className="font-heading font-semibold text-sm tracking-[0.08em]">UXNIFY</span>
-          </a>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#problem" className="text-sm text-steel hover:text-ice transition-colors">Problem</a>
-            <a href="#solution" className="text-sm text-steel hover:text-ice transition-colors">Solution</a>
-            <a href="#process" className="text-sm text-steel hover:text-ice transition-colors">Process</a>
-            <a href="#verticals" className="text-sm text-steel hover:text-ice transition-colors">Who We Help</a>
-          </div>
-          <a
-            href="#cta"
-            className="bg-cyan text-onyx font-heading font-medium text-sm px-5 py-2 rounded-md hover:bg-[#6AEBFF] transition-all"
-          >
-            Get Started
-          </a>
-        </div>
-      </nav>
+      <Nav />
 
       {/* Hero */}
       <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative pt-16">
@@ -317,7 +296,7 @@ export default function Home() {
             uses — and show you what one could look like.
           </p>
           <a
-            href="mailto:hello@uxnify.com"
+            href="/contact"
             className="inline-block bg-cyan text-onyx font-heading font-medium px-8 py-4 rounded-lg hover:bg-[#6AEBFF] hover:shadow-[0_4px_24px_rgba(77,227,255,0.25)] transition-all text-lg"
           >
             Book a Discovery Call
