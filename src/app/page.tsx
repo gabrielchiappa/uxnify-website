@@ -1,12 +1,37 @@
 export default function Home() {
   return (
     <main>
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-onyx/80 border-b border-white/[0.06]">
+        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+          <a href="/" className="flex items-center gap-3">
+            <svg className="w-6 h-6" viewBox="0 0 200 200" fill="none">
+              <path d="M 50 50 L 92 92 M 108 108 L 150 150" stroke="#4DE3FF" strokeWidth="7" strokeLinecap="round"/>
+              <path d="M 150 50 L 108 92 M 92 108 L 50 150" stroke="#4DE3FF" strokeWidth="7" strokeLinecap="round"/>
+            </svg>
+            <span className="font-heading font-semibold text-sm tracking-[0.08em]">UXNIFY</span>
+          </a>
+          <div className="hidden md:flex items-center gap-8">
+            <a href="#problem" className="text-sm text-steel hover:text-ice transition-colors">Problem</a>
+            <a href="#solution" className="text-sm text-steel hover:text-ice transition-colors">Solution</a>
+            <a href="#process" className="text-sm text-steel hover:text-ice transition-colors">Process</a>
+            <a href="#verticals" className="text-sm text-steel hover:text-ice transition-colors">Who We Help</a>
+          </div>
+          <a
+            href="#cta"
+            className="bg-cyan text-onyx font-heading font-medium text-sm px-5 py-2 rounded-md hover:bg-[#6AEBFF] transition-all"
+          >
+            Get Started
+          </a>
+        </div>
+      </nav>
+
       {/* Hero */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative">
+      <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative pt-16">
         <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_50%_40%_at_50%_45%,rgba(77,227,255,0.03)_0%,transparent_70%)]" />
 
         <svg
-          className="w-20 h-20 mb-10"
+          className="w-24 h-24 mb-8"
           viewBox="0 0 200 200"
           fill="none"
         >
@@ -24,19 +49,22 @@ export default function Home() {
           />
         </svg>
 
-        <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl leading-[1.1]">
-          Your business needs one app.{" "}
-          <span className="text-mist">Not twelve.</span>
+        <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold tracking-[0.1em] mb-6">
+          UXNIFY
         </h1>
 
-        <p className="mt-6 text-lg md:text-xl text-mist max-w-xl leading-relaxed">
+        <p className="font-heading text-xl md:text-2xl lg:text-3xl font-medium text-mist max-w-2xl leading-snug">
+          Your business needs one app. Not twelve.
+        </p>
+
+        <p className="mt-6 text-base md:text-lg text-steel max-w-lg leading-relaxed">
           We build custom software that replaces your tool chaos — designed for
           how you actually work.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
           <a
-            href="#process"
+            href="#cta"
             className="bg-cyan text-onyx font-heading font-medium px-7 py-3.5 rounded-lg hover:bg-[#6AEBFF] hover:shadow-[0_4px_24px_rgba(77,227,255,0.25)] transition-all"
           >
             Book a Discovery Call
@@ -128,7 +156,7 @@ export default function Home() {
       </section>
 
       {/* Solution */}
-      <section className="py-28 px-6 max-w-4xl mx-auto">
+      <section id="solution" className="py-28 px-6 max-w-4xl mx-auto">
         <p className="text-xs font-medium tracking-[0.2em] uppercase text-cyan mb-4">
           What we do
         </p>
@@ -230,7 +258,7 @@ export default function Home() {
       </section>
 
       {/* Verticals */}
-      <section className="py-28 px-6 max-w-4xl mx-auto">
+      <section id="verticals" className="py-28 px-6 max-w-4xl mx-auto">
         <p className="text-xs font-medium tracking-[0.2em] uppercase text-cyan mb-4">
           Who we help
         </p>
@@ -279,7 +307,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-28 px-6 text-center">
+      <section id="cta" className="py-28 px-6 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-heading text-3xl md:text-4xl font-semibold tracking-tight mb-6">
             Ready to replace the chaos?
