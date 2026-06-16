@@ -5,32 +5,15 @@ export default function Footer() {
     <footer className="border-t border-white/[0.06] bg-graphite">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Brand + Contact */}
+          {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-4">
+            <Link href="/" className="flex items-center gap-3">
               <svg className="w-6 h-6" viewBox="0 0 200 200" fill="none">
                 <path d="M 50 50 L 92 92 M 108 108 L 150 150" stroke="#4DE3FF" strokeWidth="7" strokeLinecap="round"/>
                 <path d="M 150 50 L 108 92 M 92 108 L 50 150" stroke="#4DE3FF" strokeWidth="7" strokeLinecap="round"/>
               </svg>
               <span className="font-heading font-semibold text-sm tracking-[0.08em]">UXNIFY</span>
             </Link>
-            <p className="text-sm text-steel leading-relaxed mb-5">
-              Custom business software that replaces tool chaos. Built for teams of 5–30 who deserve one app that fits.
-            </p>
-            <div className="space-y-2 text-sm text-mist">
-              <div className="flex items-center gap-2">
-                <span className="text-steel">📧</span>
-                <a href="mailto:info@uxnify.com" className="hover:text-cyan transition-colors">info@uxnify.com</a>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-steel">📞</span>
-                <a href="tel:+18556403636" className="hover:text-cyan transition-colors">+1 (855) 640-3636</a>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-steel">📍</span>
-                <span>Albany, NY</span>
-              </div>
-            </div>
           </div>
 
           {/* Services */}
@@ -89,11 +72,11 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/[0.06] px-6 py-6">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-xs text-steel text-center sm:text-left">
-            <p>&copy; 2026 Uxnify Ventures LLC. All rights reserved.</p>
-            <p className="mt-1">A DBA of Uxnify Ventures LLC</p>
-          </div>
-          <div className="flex gap-4 text-xs text-steel">
+          <p className="text-xs text-steel">&copy; 2026 Uxnify Ventures LLC. All rights reserved.</p>
+          <div className="flex flex-wrap items-center gap-4 text-xs text-steel">
+            <a href="mailto:info@uxnify.com" className="hover:text-ice transition-colors">info@uxnify.com</a>
+            <a href="tel:+18556403636" className="hover:text-ice transition-colors">+1 (855) 640-3636</a>
+            <span>Albany, NY</span>
             <Link href="/privacy" className="hover:text-ice transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-ice transition-colors">Terms</Link>
           </div>
