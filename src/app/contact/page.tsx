@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Contact — Uxnify",
@@ -173,11 +174,7 @@ export default function ContactPage() {
         </div>
       </main>
 
-      <footer className="border-t border-white/[0.06] py-12 px-6 text-center">
-        <p className="text-sm text-steel">
-          &copy; 2026 Uxnify Ventures LLC. All rights reserved.
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }
